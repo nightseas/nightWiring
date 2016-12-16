@@ -1,0 +1,15 @@
+######################################################
+#         Auto-build for nightWiring examples        #
+#        By Xiaohai Li  (haixiaolee@gmail.com)       #
+######################################################
+
+echo "[Compile]"
+gcc -o bmc-serial bmc-serial.c -lnightWiring -lpthread
+gcc -o led-blink led-blink.c -lnightWiring -lpthread
+gcc -o led-seg-gpio led-seg-gpio.c -lnightWiring -lpthread
+gcc -o led-softpwm-breath led-softpwm-breath.c -lnightWiring -lpthread
+gcc -o key-read key-read.c -lnightWiring -lpthread
+gcc -o key-interrupt key-interrupt.c -lnightWiring -lpthread
+gcc -o i2c-rtc i2c-rtc.c -lnightWiring -lpthread
+gcc -o spi-led-matrix spi-led-matrix.c -lnightWiring -lpthread
+echo "[Finish]"
